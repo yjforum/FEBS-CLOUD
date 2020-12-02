@@ -21,7 +21,7 @@
           }
         ],
         "url": {
-          "raw": "http://localhost:8301/auth/oauth/token?grant_type=password&username=mrbird&password=1234qwer&key=1234&code=8873",
+          "raw": "http://localhost:8301/auth/oauth/token?grant_type=password&username=michael&password=1234qwer&key=1234&code=8873",
           "protocol": "http",
           "host": [
             "localhost"
@@ -40,7 +40,7 @@
             },
             {
               "key": "username",
-              "value": "mrbird",
+              "value": "michael",
               "description": "用户名"
             },
             {

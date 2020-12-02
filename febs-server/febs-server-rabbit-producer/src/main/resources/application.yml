@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: febs-server-producer
+  #rabbitMq配置
+  rabbitmq:
+    host: 192.168.24.133
+    port: 5672
+    username: febs
+    password: 123456
+    # 开启发送确认
+    publisher-confirms: true
+    # 开启发送失败退回
+    publisher-returns: true
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 5
+          max-interval: 10000   # 重试最大间隔时间
+          initial-interval: 2000  # 重试初始间隔时间
+          multiplier: 2 # 间隔时间乘子，间隔时间*乘子=下一次的间隔时间，最大不能超过设置的最大间隔时间
+
+
+
+server:
+  port: 8082
+listenerQueue:
+  queues: back.queue4
+

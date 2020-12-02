@@ -1,34 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+	<modules>
+		<module>febs-sentinel</module>
+		<module>febs-server-generator</module>
+		<module>febs-server-job</module>
+		<module>febs-server-rabbit-producer</module>
+		<module>febs-server-rabbit-Consumer</module>
+		<module>febs-server-system</module>
+		<module>febs-server-test</module>
+	</modules>
+	<parent>
+		<groupId>cc.michael</groupId>
+		<artifactId>febs-cloud</artifactId>
+		<version>2.2-RELEASE</version>
+		<relativePath>../febs-cloud/pom.xml</relativePath>
+	</parent>
+	<groupId>cc.michael.febs.server.producer</groupId>
+	<artifactId>febs-server-producer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>febs-server</name>
+	<description>业务服务</description>
 
-    <parent>
-        <groupId>cc.mrbird</groupId>
-        <artifactId>febs-cloud</artifactId>
-        <version>2.2-RELEASE</version>
-        <relativePath>../febs-cloud/pom.xml</relativePath>
-    </parent>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 
-    <artifactId>febs-server</artifactId>
-    <version>2.2-RELEASE</version>
-    <packaging>pom</packaging>
-    <name>FEBS-Server</name>
-    <description>FEBS-Server服务提供模块</description>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
-    <modules>
-        <module>febs-server-system</module>
-        <module>febs-server-test</module>
-        <module>febs-server-generator</module>
-        <module>febs-server-job</module>
-    </modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
-    <dependencies>
-        <dependency>
-            <groupId>net.logstash.logback</groupId>
-            <artifactId>logstash-logback-encoder</artifactId>
-            <version>${logstash-logback-encoder.version}</version>
-        </dependency>
-    </dependencies>
 </project>

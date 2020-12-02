@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>febs-common</artifactId>
-        <groupId>cc.mrbird</groupId>
+        <groupId>cc.michael</groupId>
         <version>2.2-RELEASE</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -21,7 +21,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>cc.mrbird</groupId>
+            <groupId>cc.michael</groupId>
             <artifactId>febs-common-core</artifactId>
             <version>${febs-cloud.version}</version>
         </dependency>

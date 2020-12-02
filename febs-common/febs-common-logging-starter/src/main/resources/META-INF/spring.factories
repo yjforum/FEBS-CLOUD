@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-cc.mrbird.febs.common.logging.starter.configure.FebsLogAutoConfigure
+cc.michael.febs.common.logging.starter.configure.FebsLogAutoConfigure

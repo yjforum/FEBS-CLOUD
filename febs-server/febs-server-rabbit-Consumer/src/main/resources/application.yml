@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: febs-server-producer
+  #rabbitMq配置
+  rabbitmq:
+    host: 192.168.24.133
+    port: 5672
+    username: febs
+    password: 123456
+server:
+  port: 8083
+# direct模式的消费者
+# 配置producer中操作的Queue和Exchange相关信息的。key是自定义的。为了避免硬编码（代码中可以写死）。
+# exchange的命名。交换器名称可以随意定义。
+mqDirect:
+  config:
+    # info级别queue的名称
+    queue:
+      info:
+        routing:
+          key: back.V1
+#topic 模式消费者
+mq:
+  config:
+    # info级别queue的名称
+    queue:
+      info: back.queue1
+    exchange: back.exchange
+
+

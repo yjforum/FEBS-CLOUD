@@ -148,21 +148,21 @@ CREATE TABLE `t_eximport`
 -- ----------------------------
 BEGIN;
 INSERT INTO `t_eximport`
-VALUES ('字段1', 1, 'mrbird0@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 1, 'michael0@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 2, 'mrbird1@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 2, 'michael1@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 3, 'mrbird2@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 3, 'michael2@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 4, 'mrbird3@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 4, 'michael3@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 5, 'mrbird4@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 5, 'michael4@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 6, 'mrbird5@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 6, 'michael5@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 7, 'mrbird6@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 7, 'michael6@gmail.com', '2019-07-25 19:08:01');
 INSERT INTO `t_eximport`
-VALUES ('字段1', 8, 'mrbird7@gmail.com', '2019-07-25 19:08:01');
+VALUES ('字段1', 8, 'michael7@gmail.com', '2019-07-25 19:08:01');
 COMMIT;
 
 -- ----------------------------
@@ -192,7 +192,7 @@ CREATE TABLE `t_generator_config`
 -- ----------------------------
 BEGIN;
 INSERT INTO `t_generator_config`
-VALUES (1, 'MrBird', 'cc.mrbird.febs.server.generator.gen', 'entity', 'mapper', 'mapper', 'service', 'service.impl',
+VALUES (1, 'michael', 'cc.michael.febs.server.generator.gen', 'entity', 'mapper', 'mapper', 'service', 'service.impl',
         'controller', '1', 't_');
 COMMIT;
 
@@ -226,7 +226,7 @@ VALUES (1, 'taskList', 'test', 'hello', '0/1 * * * * ?', '1', '有参任务调�
 INSERT INTO `t_job`
 VALUES (2, 'taskList', 'test1', NULL, '0/10 * * * * ?', '1', '无参任务调度测试', '2018-02-24 17:06:23');
 INSERT INTO `t_job`
-VALUES (3, 'taskList', 'test2', '{\"name\":\"mrbird\",\"age\":18}', '0/1 * * * * ?', '1', 'JSON类型参数任务测试',
+VALUES (3, 'taskList', 'test2', '{\"name\":\"michael\",\"age\":18}', '0/1 * * * * ?', '1', 'JSON类型参数任务测试',
         '2018-02-26 09:28:26');
 INSERT INTO `t_job`
 VALUES (4, 'taskList', 'test3', '', '0/5 * * * * ?', '1', '测试异常，没有编写test3任务', '2018-02-26 11:15:30');
@@ -896,7 +896,7 @@ CREATE TABLE `t_user`
 -- ----------------------------
 BEGIN;
 INSERT INTO `t_user`
-VALUES (1, 'MrBird', '$2a$10$gzhiUb1ldc1Rf3lka4k/WOoFKKGPepHSzJxzcPSN5/65SzkMdc.SK', 2, 'mrbird@qq.com', '17788888888',
+VALUES (1, 'michael', '$2a$10$gzhiUb1ldc1Rf3lka4k/WOoFKKGPepHSzJxzcPSN5/65SzkMdc.SK', 2, 'michael@qq.com', '17788888888',
         '1', '2019-06-14 20:39:22', '2020-04-15 16:00:32', '2020-04-15 16:03:13', '0', '1', 'white',
         'gaOngJwsRYRaVAuXXcmB.png', '我是帅比作者。');
 INSERT INTO `t_user`

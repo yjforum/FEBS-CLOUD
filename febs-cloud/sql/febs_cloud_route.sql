@@ -34,7 +34,7 @@ db.getCollection("blackList").insert([ {
     location: "",
     status: "1",
     createTime: "2020-01-07 14:32:07",
-    _class: "cc.mrbird.febs.gateway.entity.BlackList"
+    _class: "cc.michael.febs.gateway.entity.BlackList"
 } ]);
 
 // ----------------------------
@@ -68,7 +68,7 @@ db.getCollection("rateLimitRule").insert([ {
     intervalSec: "10",
     status: "1",
     createTime: "2020-01-12 14:28:46",
-    _class: "cc.mrbird.febs.gateway.enhance.entity.RateLimitRule"
+    _class: "RateLimitRule"
 } ]);
 
 // ----------------------------
@@ -92,7 +92,7 @@ db.getCollection("routeUser").insert([ {
     password: "$2a$10$NBv548VFJ6OyTkxcHy9o5uRNaYSMPHWHW9fL3ZRlS1Hy5kxlR1qdy",
     roles: "user",
     createTime: "2020-01-14 11:00:48",
-    _class: "cc.mrbird.febs.gateway.enhance.entity.RouteUser"
+    _class: "RouteUser"
 } ]);
 db.getCollection("routeUser").insert([ {
     _id: ObjectId("5e1d2eee55165e6516c23058"),
@@ -100,5 +100,5 @@ db.getCollection("routeUser").insert([ {
     password: "$2a$10$WeUSapCOv8uDb2MrUu19cOo6O.Xb4PAJN/4GdAfIcgJ3SAWw.NY3m",
     roles: "admin",
     createTime: "2020-01-14 11:01:02",
-    _class: "cc.mrbird.febs.gateway.enhance.entity.RouteUser"
+    _class: "RouteUser"
 } ]);
