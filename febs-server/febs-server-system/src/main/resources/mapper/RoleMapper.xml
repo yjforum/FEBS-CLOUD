@@ -14,13 +14,13 @@
 
     <select id="findUserRole" resultMap="roleMap">
         SELECT
-        r.*
+            r.*
         FROM
-        t_role r
+            t_role r
         LEFT JOIN t_user_role ur ON (r.role_id = ur.role_id)
         LEFT JOIN t_user u ON (u.user_id = ur.user_id)
         WHERE
-        u.username = #{username}
+            u.username = #{username}
     </select>
 
     <select id="findRolePage" parameterType="role" resultType="role">
