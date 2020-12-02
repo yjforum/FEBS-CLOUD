@@ -18,7 +18,7 @@
     <description>FEBS-Server服务提供模块</description>
 
     <modules>
-        <module>febs-sentinel</module>
+        <module>febs-server-sentinel</module>
         <module>febs-server-system</module>
         <module>febs-server-test</module>
         <module>febs-server-generator</module>
